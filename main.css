@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(img/bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+:root{
+    --primary: ##151414C  ;
+    --secondary:#8A8EE1 ;
+    --ternary:#27DF96 ;
+}
+.navbar{
+    background: var(--primary);
+}
+nav h2{
+    text-shadow: 2px 1px 1px var(--ternary);
+
+}
+.icons{
+    position: absolute;
+    right:30px;
+    top:20%;
+}
+.grid{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,fr) ;
+    grid-auto-rows: minmax(200px,auto);
+    gap:10px;
+}
+.block{
+    margin-top: 2px;
+}
+a{
+    transition: 0.5s;
+}
+a:hover{
+transform: scale(1.2);
+}
